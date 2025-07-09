@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded shadow-md">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-3xl font-bold">Admin Dashboard</h1>
+            <button id="logout-btn" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Logout</button>
+        </div>
+        
+        <h2 class="text-2xl font-semibold mb-4">Create New Post</h2>
+        <form id="post-form">
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="title">Title</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="title" type="text" required>
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 font-bold mb-2" for="content">Content</label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="content" rows="10" required></textarea>
+            </div>
+            <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="submit">
+                Publish Post
+            </button>
+            <p id="form-message" class="mt-4"></p>
+        </form>
+    </div>
+
+    <script>
+        // Logout
+        document.getElementById('logout-btn').addEventListener('click', async () => {
+            await fetch('/api/logout', { method: 'POST' });
+            window.location.href = '/login.html';
+        });
+
+        // Submit new post
+        document.getElementById('post-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+            const formMessage = document.getElementById('form-message');
+
+            const response = await fetch('/api/posts', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ title, content })
+            });
+
+            if (response.ok) {
+                formMessage.textContent = 'Post published successfully!';
+                formMessage.className = 'mt-4 text-green-500';
+                e.target.reset(); // Xóa form
+            } else if (response.status === 401) {
+                 window.location.href = '/login.html'; // Nếu session hết hạn, chuyển về trang login
+            } else {
+                const data = await response.json();
+                formMessage.textContent = data.message || 'Failed to publish post.';
+                formMessage.className = 'mt-4 text-red-500';
+            }
+        });
+    </script>
+</body>
+</html>
