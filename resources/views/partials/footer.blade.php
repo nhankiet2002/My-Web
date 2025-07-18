@@ -5,8 +5,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
                 <div class="flex items-center mb-6">
-                     <a href="{{ route('home') }}" class="flex items-center">
-                        <i class="fas fa-user-circle text-primary text-3xl mr-3"></i>
+            <a href="{{ route('home') }}" class="flex items-center">
+                <img src="{{ asset('storage/coding.png') }}" alt="Avatar" class="w-10 h-10 rounded-full mr-3">
                         <span class="text-2xl font-bold gradient-text">Đàm Nhân Kiệt</span>
                     </a>
                 </div>

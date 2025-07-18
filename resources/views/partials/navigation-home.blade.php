@@ -4,10 +4,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-20 items-center">
             <div class="flex items-center gap-8">
-                <a href="{{ route('home') }}" class="flex items-center">
-                    <i class="fas fa-user-circle text-primary text-3xl mr-3"></i>
-                    <span class="text-2xl font-bold gradient-text">Đàm Nhân Kiệt</span>
-                </a>
+            <a href="{{ route('home') }}" class="flex items-center">
+                <img src="{{ asset('storage/coding.png') }}" alt="Avatar" class="w-10 h-10 rounded-full mr-3">
+                <span class="text-2xl font-bold gradient-text">Đàm Nhân Kiệt</span>
+            </a>
                 <div class="hidden md:flex gap-6">
                     {{-- Các liên kết này sẽ thay đổi tùy thuộc vào trang hiện tại --}}
                     @if(request()->routeIs('home'))

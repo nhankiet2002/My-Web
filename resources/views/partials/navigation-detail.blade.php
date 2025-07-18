@@ -5,7 +5,7 @@
         <div class="flex justify-between h-20 items-center">
             {{-- Logo --}}
             <a href="{{ route('home') }}" class="flex items-center">
-                <i class="fas fa-user-circle text-primary text-3xl mr-3"></i>
+                <img src="{{ asset('storage/coding.png') }}" alt="Avatar" class="w-10 h-10 rounded-full mr-3">
                 <span class="text-2xl font-bold gradient-text">Đàm Nhân Kiệt</span>
             </a>
             
