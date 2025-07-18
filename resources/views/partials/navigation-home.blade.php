@@ -1,0 +1,63 @@
+{{-- resources/views/partials/navigation-home.blade.php --}}
+
+<nav class="bg-black/70 backdrop-blur-md border-b border-gray-800 fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+            <div class="flex items-center gap-8">
+                <a href="{{ route('home') }}" class="flex items-center">
+                    <i class="fas fa-user-circle text-primary text-3xl mr-3"></i>
+                    <span class="text-2xl font-bold gradient-text">Đàm Nhân Kiệt</span>
+                </a>
+                <div class="hidden md:flex gap-6">
+                    {{-- Các liên kết này sẽ thay đổi tùy thuộc vào trang hiện tại --}}
+                    @if(request()->routeIs('home'))
+                        {{-- Nếu ở trang chủ, link là dạng anchor --}}
+                        <a href="#about" class="font-medium text-gray-300 hover:text-primary transition-colors primary-underline"><span>Về Tôi</span></a>
+                        <a href="#projects" class="font-medium text-gray-300 hover:text-primary transition-colors primary-underline"><span>Dự Án</span></a>
+                        <a href="#blog" class="font-medium text-gray-300 hover:text-primary transition-colors primary-underline"><span>Blog</span></a>
+                        <a href="#skills" class="font-medium text-gray-300 hover:text-primary transition-colors primary-underline"><span>Kỹ Năng</span></a>
+                    @else
+                        {{-- Nếu ở trang khác (như trang danh sách), link sẽ trỏ về trang tương ứng --}}
+                        <a href="{{ route('home') }}#about" class="font-medium text-gray-300 hover:text-primary transition-colors primary-underline"><span>Về Tôi</span></a>
+                        <a href="{{ route('projects.index') }}" class="font-medium text-gray-300 hover:text-primary transition-colors primary-underline"><span>Dự Án</span></a>
+                        <a href="{{ route('blog.index') }}" class="font-medium text-gray-300 hover:text-primary transition-colors primary-underline"><span>Blog</span></a>
+                        <a href="{{ route('home') }}#skills" class="font-medium text-gray-300 hover:text-primary transition-colors primary-underline"><span>Kỹ Năng</span></a>
+                    @endif
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div id="theme-toggle-container">
+                    <button id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+                    </button>
+                    <span id="theme-toggle-text"></span>
+                </div>
+                <a href="{{ route('home') }}#contact" class="hidden sm:flex btn-primary px-6 py-3 rounded-full items-center gap-2 glow-box pulse">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Liên Hệ</span>
+                </a>
+                <button class="md:hidden text-gray-300 hover:text-primary" id="mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden bg-black/90 backdrop-blur-lg border-t border-gray-800" id="mobile-menu">
+        <div class="px-4 py-3 space-y-4">
+             @if(request()->routeIs('home'))
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary hover:bg-gray-900">Về Tôi</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary hover:bg-gray-900">Dự Án</a>
+                <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary hover:bg-gray-900">Blog</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary hover:bg-gray-900">Kỹ Năng</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary hover:bg-gray-900">Liên Hệ</a>
+            @else
+                <a href="{{ route('home') }}#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary hover:bg-gray-900">Về Tôi</a>
+                <a href="{{ route('projects.index') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary hover:bg-gray-900">Dự Án</a>
+                <a href="{{ route('blog.index') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary hover:bg-gray-900">Blog</a>
+                <a href="{{ route('home') }}#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary hover:bg-gray-900">Kỹ Năng</a>
+                <a href="{{ route('home') }}#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary hover:bg-gray-900">Liên Hệ</a>
+            @endif
+        </div>
+    </div>
+</nav>
