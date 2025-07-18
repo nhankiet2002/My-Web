@@ -18,7 +18,7 @@
                     </h1>
                     
                     <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-xl">
-                        Tôi đam mê xây dựng các giải pháp công nghệ sáng tạo và chia sẻ kiến thức qua những bài viết blog.
+                        Tôi đam mê xây dựng các giải pháp công nghệ sáng tạo và chia sẻ trải nghiệm, kiến thức qua những bài viết blog.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 mb-12">
                         <a href="#projects" class="btn-primary px-8 py-4 rounded-full text-lg flex items-center justify-center gap-2">
@@ -60,7 +60,7 @@
                             <div class="border-t border-gray-800 pt-4 mt-4 flex justify-between items-center text-sm">
                                 <div class="flex flex-col">
                                     <span class="text-gray-400">Vị trí</span>
-                                    <span class="font-bold">Chùa Bộc ,Hà Nội, Việt Nam</span>
+                                    <span class="font-bold">Chùa Bộc, Hà Nội, Việt Nam</span>
                                 </div>
                                 <div class="flex flex-col text-right">
                                     <span class="text-gray-400">Sẵn sàng</span>
