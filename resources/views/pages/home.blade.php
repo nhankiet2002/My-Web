@@ -18,8 +18,9 @@
                     </h1>
                     
                     <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-xl">
-                        Tôi đam mê xây dựng các giải pháp công nghệ sáng tạo và chia sẻ trải nghiệm, kiến thức qua những bài viết blog.
+                        Tôi yêu thích việc tạo ra các giải pháp công nghệ hữu ích, và luôn mong muốn truyền cảm hứng qua từng bài viết – nơi tôi kể lại những điều học được, làm được và đang ấp ủ.
                     </p>
+
                     <div class="flex flex-col sm:flex-row gap-4 mb-12">
                         <a href="#projects" class="btn-primary px-8 py-4 rounded-full text-lg flex items-center justify-center gap-2">
                             <i class="fas fa-laptop-code"></i>
@@ -52,11 +53,14 @@
                                 </div>
                             </div>
                             <h4 class="font-bold text-primary mb-2">Giới thiệu nhanh</h4>
-                            <p class="text-gray-300">
-                                Tôi là một người đam mê lập trình, nghiên cứu các vấn đề liên quan đến <strong style="font-size: 1.2em;" class="text-white">Thuỷ Lợi</strong> và là một nhà tư vấn 
-                                <strong style="font-size: 1.2em;" class="text-white">Tử Vi</strong>.
-                                <br> Tôi thích khám phá các kiến thức, công nghệ mới và chia sẻ qua blog cá nhân.
-                            </p>
+                        <p class="text-gray-300">
+                            Tôi tin rằng dòng chảy của nước (<strong class="text-white">Thủy Lợi</strong>), dòng chảy của vận mệnh (<strong class="text-white">Tử Vi</strong>) và dòng chảy của dữ liệu (<strong class="text-white">IT</strong>) đều tuân theo những quy luật sâu sắc. 
+                            <br>
+                            Hành trình của tôi là khám phá và kết nối những quy luật đó – từ kỹ thuật đến yếu tố con người – để tạo ra các giải pháp công nghệ có giá trị thực tiễn.
+                            <br>
+                            Dù là một hệ thống quản lý phức tạp hay một công cụ phân tích tinh gọn, tôi luôn tập trung vào việc xây dựng sản phẩm tối ưu, đáp ứng đúng nhu cầu với sự thấu hiểu sâu sắc cả về <strong class="text-white">công nghệ</strong> lẫn <strong class="text-white">con người</strong>.
+                        </p>
+
                             <div class="border-t border-gray-800 pt-4 mt-4 flex justify-between items-center text-sm">
                                 <div class="flex flex-col">
                                     <span class="text-gray-400">Vị trí</span>
@@ -91,21 +95,68 @@
         </div>
     </div>
 
-    <!-- About Me Section -->
-    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900 relative">
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1.5 rounded-full bg-black/30 border border-gray-800 text-primary font-medium mb-4 glow-box">HÀNH TRÌNH CỦA TÔI</span>
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Triết Lý Làm Việc <span class="gradient-text">Của Tôi</span></h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Tôi tin vào sức mạnh của việc học hỏi liên tục, xây dựng sản phẩm chất lượng và chia sẻ kiến thức.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="gradient-box p-8 rounded-2xl feature-card"><div class="w-12 h-12 rounded-full bg-primary/10 text-primary text-xl flex items-center justify-center mb-6"><i class="fas fa-book-open"></i></div><h3 class="text-xl font-bold text-white mb-4">Học Hỏi Không Ngừng</h3><p class="text-gray-400">Thế giới công nghệ luôn thay đổi. Tôi dành thời gian mỗi ngày để cập nhật xu hướng, công nghệ và phương pháp mới.</p></div>
-                <div class="gradient-box p-8 rounded-2xl feature-card"><div class="w-12 h-12 rounded-full bg-primary/10 text-primary text-xl flex items-center justify-center mb-6"><i class="fas fa-cogs"></i></div><h3 class="text-xl font-bold text-white mb-4">Xây Dựng Bền Vững</h3><p class="text-gray-400">Tôi tập trung vào việc viết mã sạch, dễ bảo trì và có khả năng mở rộng, tạo ra những sản phẩm có giá trị lâu dài.</p></div>
-                <div class="gradient-box p-8 rounded-2xl feature-card"><div class="w-12 h-12 rounded-full bg-primary/10 text-primary text-xl flex items-center justify-center mb-6"><i class="fas fa-share-alt"></i></div><h3 class="text-xl font-bold text-white mb-4">Chia Sẻ Để Cùng Nhau Phát Triển</h3><p class="text-gray-400">Kiến thức trở nên giá trị hơn khi được chia sẻ. Tôi viết blog để ghi lại hành trình và giúp đỡ cộng đồng.</p></div>
-            </div>
+   <!-- About Me Section -->
+<section id="about" class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900 relative">
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="text-center mb-16">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-black/30 border border-gray-800 text-primary font-medium mb-4 glow-box">
+                HÀNH TRÌNH CỦA TÔI
+            </span>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Phương Pháp <span class="gradient-text">Tiếp Cận</span>
+            </h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Kết hợp góc nhìn hệ thống, sự đồng cảm và tư duy kỹ thuật để đưa ra giải pháp hiệu quả và nhân văn trong mọi hoàn cảnh.
+            </p>
         </div>
-    </section>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="gradient-box p-8 rounded-2xl feature-card">
+                <div class="flex justify-between items-center gap-4 mb-4">
+                    <h3 class="text-xl font-bold text-white">
+                        Quan Sát Đa Chiều
+                    </h3>
+                    <div class="w-12 h-12 rounded-full bg-primary/10 text-primary text-xl flex-shrink-0 flex items-center justify-center">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <p class="text-gray-400">
+                    Tôi không nhìn vấn đề ở một chiều — mà phân tích qua kỹ thuật, tâm lý con người và bản chất hệ thống để có cái nhìn toàn cảnh và sâu sắc.
+                </p>
+            </div>
+
+            <div class="gradient-box p-8 rounded-2xl feature-card">
+                <div class="flex justify-between items-center gap-4 mb-4">
+                    <h3 class="text-xl font-bold text-white">
+                        Kiến Tạo Thực Tiễn
+                    </h3>
+                    <div class="w-12 h-12 rounded-full bg-primary/10 text-primary text-xl flex-shrink-0 flex items-center justify-center">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                </div>
+                <p class="text-gray-400">
+                    Không dừng ở ý tưởng, tôi chuyển hóa hiểu biết thành hành động cụ thể: một công trình, một sản phẩm số hay một định hướng sự nghiệp.
+                </p>
+            </div>
+
+            <div class="gradient-box p-8 rounded-2xl feature-card">
+                <div class="flex justify-between items-center gap-4 mb-4">
+                    <h3 class="text-xl font-bold text-white">
+                        Trao Quyền & Lan Tỏa
+                    </h3>
+                    <div class="w-12 h-12 rounded-full bg-primary/10 text-primary text-xl flex-shrink-0 flex items-center justify-center">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                </div>
+                <p class="text-gray-400">
+                    Tôi không chỉ chia sẻ kiến thức — mà hướng đến trao quyền, giúp người khác hiểu rõ chính mình và làm chủ con đường phía trước.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="py-24 px-4 sm:px-6 lg:px-8 relative z-10">
@@ -180,63 +231,110 @@
 
     <!-- Skills/Tech Stack Section -->
 <section id="skills" class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-black">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1.5 rounded-full bg-black/30 border border-gray-800 text-primary font-medium mb-4 glow-box">
-                    NĂNG LỰC CỐT LÕI
-                </span>
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                    Bộ Công Cụ <span class="gradient-text">Công Nghệ</span>
-                </h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Những công nghệ và công cụ tôi sử dụng hàng ngày để biến ý tưởng thành hiện thực.
-                </p>
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-black/30 border border-gray-800 text-primary font-medium mb-4 glow-box">
+                NĂNG LỰC CỐT LÕI
+            </span>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Năng Lực <span class="gradient-text">Toàn Diện</span>
+            </h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Sự giao thoa giữa khoa học kỹ thuật, khoa học huyền bí và công nghệ hiện đại để tạo ra các giải pháp độc đáo.
+            </p>
+        </div>
+
+        <!-- === NHÓM 1: KỸ THUẬT THỦY LỢI === -->
+        <div class="mb-16">
+            <div class="relative mb-12">
+                <div class="absolute inset-0 flex items-center" aria-hidden="true"><div class="w-full border-t border-gray-700"></div></div>
+                <div class="relative flex justify-center"><span class="bg-gray-900 px-4 text-xl font-medium text-primary">Kỹ Thuật Thủy Lợi</span></div>
             </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="gradient-box p-6 rounded-xl feature-card text-center">
-                    <i class="fab fa-react text-5xl text-primary mb-4"></i>
-                    <h3 class="text-lg font-bold text-white">React & Next.js</h3>
-                    <p class="text-gray-400 text-sm">Frontend Development</p>
-                </div>
-                <div class="gradient-box p-6 rounded-xl feature-card text-center">
-                    <i class="fab fa-node-js text-5xl text-primary mb-4"></i>
-                    <h3 class="text-lg font-bold text-white">Node.js & Express</h3>
-                    <p class="text-gray-400 text-sm">Backend Development</p>
+                    <i class="fas fa-sitemap text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Quy Hoạch</h3>
+                    <p class="text-gray-400 text-sm">Phân tích lưu vực, cân bằng và phân phối tài nguyên nước.</p>
                 </div>
                 <div class="gradient-box p-6 rounded-xl feature-card text-center">
-                    <i class="fas fa-database text-5xl text-primary mb-4"></i>
-                    <h3 class="text-lg font-bold text-white">SQL & NoSQL</h3>
-                    <p class="text-gray-400 text-sm">Database Management</p>
+                    <i class="fas fa-calculator text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Quản Lý Công Trình</h3>
+                    <p class="text-gray-400 text-sm">Vận hành hệ thống, tính toán định mức và hiệu quả kinh tế.</p>
                 </div>
-                 <div class="gradient-box p-6 rounded-xl feature-card text-center">
-                    <i class="fab fa-docker text-5xl text-primary mb-4"></i>
-                    <h3 class="text-lg font-bold text-white">Docker & CI/CD</h3>
-                    <p class="text-gray-400 text-sm">DevOps</p>
+                <div class="gradient-box p-6 rounded-xl feature-card text-center">
+                    <i class="fas fa-map-marked-alt text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Ứng dụng GIS & CAD</h3>
+                    <p class="text-gray-400 text-sm">Phân tích không gian và thiết kế bản vẽ kỹ thuật chi tiết.</p>
                 </div>
-                 <div class="gradient-box p-6 rounded-xl feature-card text-center">
-                    <i class="fab fa-aws text-5xl text-primary mb-4"></i>
-                    <h3 class="text-lg font-bold text-white">Cloud (AWS/GCP)</h3>
-                    <p class="text-gray-400 text-sm">Cloud Computing</p>
-                </div>
-                 <div class="gradient-box p-6 rounded-xl feature-card text-center">
-                    <i class="fab fa-figma text-5xl text-primary mb-4"></i>
-                    <h3 class="text-lg font-bold text-white">Figma</h3>
-                    <p class="text-gray-400 text-sm">UI/UX Design</p>
-                </div>
-                 <div class="gradient-box p-6 rounded-xl feature-card text-center">
-                    <i class="fab fa-python text-5xl text-primary mb-4"></i>
-                    <h3 class="text-lg font-bold text-white">Python</h3>
-                    <p class="text-gray-400 text-sm">Scripting & AI</p>
-                </div>
-                 <div class="gradient-box p-6 rounded-xl feature-card text-center">
-                    <i class="fas fa-mobile-alt text-5xl text-primary mb-4"></i>
-                    <h3 class="text-lg font-bold text-white">React Native</h3>
-                    <p class="text-gray-400 text-sm">Mobile Development</p>
+                <div class="gradient-box p-6 rounded-xl feature-card text-center">
+                    <i class="fas fa-seedling text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Tưới Hiện Đại</h3>
+                    <p class="text-gray-400 text-sm">Thiết kế hệ thống tưới phun mưa, nhỏ giọt và tự động hóa.</p>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- === NHÓM 2: TƯ VẤN & LUẬN GIẢI TỬ VI === -->
+        <div class="mb-16">
+            <div class="relative mb-12">
+                <div class="absolute inset-0 flex items-center" aria-hidden="true"><div class="w-full border-t border-gray-700"></div></div>
+                <div class="relative flex justify-center"><span class="bg-gray-900 px-4 text-xl font-medium text-primary">Tư Vấn & Luận Giải Tử Vi</span></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="gradient-box p-6 rounded-xl feature-card text-center">
+                    <i class="fas fa-scroll text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Lập Lá Số</h3>
+                    <p class="text-gray-400 text-sm">An sao và thiết lập lá số chính xác theo ngày giờ sinh.</p>
+                </div>
+                <div class="gradient-box p-6 rounded-xl feature-card text-center">
+                    <i class="fas fa-yin-yang text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Luận Giải Chi Tiết</h3>
+                    <p class="text-gray-400 text-sm">Phân tích sâu Cung Mệnh, Thân và các mối tương quan sao.</p>
+                </div>
+                <div class="gradient-box p-6 rounded-xl feature-card text-center">
+                    <i class="fas fa-calendar-alt text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Xem Vận Hạn</h3>
+                    <p class="text-gray-400 text-sm">Dự báo các mốc quan trọng theo Đại Vận, Tiểu Vận, Nguyệt Vận.</p>
+                </div>
+                <div class="gradient-box p-6 rounded-xl feature-card text-center">
+                    <i class="fas fa-compass text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Tư Vấn Định Hướng</h3>
+                    <p class="text-gray-400 text-sm">Đưa ra lời khuyên về sự nghiệp, tài lộc, tình duyên để tối ưu tiềm năng.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- === NHÓM 3: PHÁT TRIỂN CÔNG NGHỆ === -->
+        <div>
+            <div class="relative mb-12">
+                <div class="absolute inset-0 flex items-center" aria-hidden="true"><div class="w-full border-t border-gray-700"></div></div>
+                <div class="relative flex justify-center"><span class="bg-gray-900 px-4 text-xl font-medium text-primary">Phát Triển Công Nghệ</span></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="gradient-box p-6 rounded-xl feature-card text-center">
+                    <i class="fab fa-laravel text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Web App (Laravel)</h3>
+                    <p class="text-gray-400 text-sm">Xây dựng Backend và các hệ thống web phức tạp.</p>
+                </div>
+                 <div class="gradient-box p-6 rounded-xl feature-card text-center">
+                    <i class="fas fa-mobile-alt text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Ứng dụng Di động</h3>
+                    <p class="text-gray-400 text-sm">Phát triển ứng dụng cho iOS & Android (React Native).</p>
+                </div>
+                <div class="gradient-box p-6 rounded-xl feature-card text-center">
+                    <i class="fas fa-brain text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Trí Tuệ Nhân Tạo (AI)</h3>
+                    <p class="text-gray-400 text-sm">Ứng dụng Machine Learning vào phân tích và dự báo.</p>
+                </div>
+                <div class="gradient-box p-6 rounded-xl feature-card text-center">
+                    <i class="fas fa-server text-5xl text-primary mb-4"></i>
+                    <h3 class="text-lg font-bold text-white">Hệ Thống & CSDL</h3>
+                    <p class="text-gray-400 text-sm">Quản trị Hosting, Supabase và triển khai ứng dụng.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- CTA Section -->
     <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black to-gray-900 relative">
