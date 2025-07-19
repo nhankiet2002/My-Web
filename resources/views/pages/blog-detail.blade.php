@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title', $post->title)
+@section('title', $post->title . ' - Đàm Nhân Kiệt')
+@section('meta_description', $post->intro)
+@section('meta_image', $post->image_url)
 
 @section('content')
 <main class="pt-32 pb-24 px-4 sm:px-6 lg:px-8 relative z-10">

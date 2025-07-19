@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title', $project->title)
+@section('title', $project->title . ' - Đàm Nhân Kiệt')
+@section('meta_description', Str::limit(strip_tags($project->content), 155)) {{-- Lấy 155 ký tự đầu tiên từ nội dung làm mô tả --}}
+@section('meta_image', $project->image_url)
 
 @section('content')
 <main class="pt-32 pb-24 px-4 sm:px-6 lg:px-8 relative z-10">
