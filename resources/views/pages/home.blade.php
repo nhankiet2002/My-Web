@@ -172,7 +172,7 @@
             <div class="mt-16 text-center">
                 <a href="{{ route('projects.index') }}" class="btn-secondary px-8 py-4 rounded-full text-lg">
                     <i class="fas fa-arrow-right mr-2"></i>
-                    Xem tất cả dự án
+                    Xem tất cả bài viết
                 </a>
             </div>
         </div>
