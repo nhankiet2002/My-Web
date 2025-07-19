@@ -66,12 +66,6 @@
             
             <p class="text-gray-400">
                 ©2024 Đàm Nhân Kiệt. Tất cả bản quyền đều được lưu.
-                 @guest
-                    <br><a href="{{ route('login') }}" class="text-gray-500 hover:text-primary transition-colors">Đăng nhập Quản trị</a>
-                @endguest
-                @auth
-                    <a href="{{ route('admin.dashboard') }}" class="text-gray-500 hover:text-primary transition-colors">Vào trang Quản trị</a>
-                @endauth
             </p>
         </div>
     </div>
