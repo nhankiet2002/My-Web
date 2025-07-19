@@ -46,7 +46,7 @@
                 <div class="gradient-box p-6 rounded-2xl">
                     <h4 class="text-xl font-bold text-white mb-4">Về Tác Giả</h4>
                     <div class="flex items-center gap-4">
-                        <img src="/storage/avatar.jpg" class="w-16 h-16 rounded-full object-cover border-2 border-primary/30">
+                        <img src="/storage/avatar.jpeg" class="w-16 h-16 rounded-full object-cover border-2 border-primary/30">
                         <div>
                             <h3 class="font-bold text-white">Đàm Nhân Kiệt</h3>
                             <p class="text-sm text-primary">Đa lĩnh vực</p>
