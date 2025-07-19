@@ -43,7 +43,7 @@
                 </div>
                 <div class="lg:w-1/2 relative">
                     <div class="relative floating">
-                        <div class="gradient-box rounded-xl w-full max-w-xl mx-auto primary-border p-6">
+                        <div class="gradient-box rounded-xl w-full max-w-lg mx-auto primary-border p-6">
                             <div class="flex items-center gap-4 mb-6">
                                 {{-- SỬA ĐƯỜNG DẪN ẢNH BẰNG HELPER `asset()` --}}
                                 <img src="{{ asset('storage/avatar.jpeg') }}" class="w-24 h-24 rounded-full object-cover border-2 border-primary/30">
@@ -53,13 +53,14 @@
                                 </div>
                             </div>
                             <h4 class="font-bold text-primary mb-2">Giới thiệu nhanh</h4>
-                        <p class="text-gray-300">
-                            Tôi tin rằng dòng chảy của nước (<strong class="text-white">Thủy Lợi</strong>), dòng chảy của vận mệnh (<strong class="text-white">Tử Vi</strong>) và dòng chảy của dữ liệu (<strong class="text-white">IT</strong>) đều tuân theo những quy luật sâu sắc. 
-                            <br>
-                            Hành trình của tôi là khám phá và kết nối những quy luật đó – từ kỹ thuật đến yếu tố con người – để tạo ra các giải pháp công nghệ có giá trị thực tiễn.
-                            <br>
-                            Dù là một hệ thống quản lý phức tạp hay một công cụ phân tích tinh gọn, tôi luôn tập trung vào việc xây dựng sản phẩm tối ưu, đáp ứng đúng nhu cầu với sự thấu hiểu sâu sắc cả về <strong class="text-white">công nghệ</strong> lẫn <strong class="text-white">con người</strong>.
-                        </p>
+                            <p class="text-gray-300 text-justify">
+                                Tôi tin rằng dòng chảy của nước (<strong class="text-white">Thủy Lợi</strong>), dòng chảy của vận mệnh (<strong class="text-white">Tử Vi</strong>) và dòng chảy của dữ liệu (<strong class="text-white">IT</strong>) đều tuân theo những quy luật sâu sắc. 
+                                <br>
+                                Hành trình của tôi là khám phá và kết nối những quy luật đó – từ kỹ thuật đến yếu tố con người – để tạo ra các giải pháp công nghệ có giá trị thực tiễn.
+                                <br>
+                                Dù là một hệ thống quản lý phức tạp hay một công cụ phân tích tinh gọn, tôi luôn tập trung vào việc xây dựng sản phẩm tối ưu, đáp ứng đúng nhu cầu với sự thấu hiểu sâu sắc cả về <strong class="text-white">công nghệ</strong> lẫn <strong class="text-white">con người</strong>.
+                            </p>
+
 
                             <div class="border-t border-gray-800 pt-4 mt-4 flex justify-between items-center text-sm">
                                 <div class="flex flex-col">
