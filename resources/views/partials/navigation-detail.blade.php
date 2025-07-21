@@ -2,11 +2,24 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-20 items-center">
             {{-- Logo --}}
-            <a href="{{ route('home') }}" class="flex items-center">
+            <a href="{{ route('home') }}" class="flex-shrink-0 flex items-center">
                 <img src="{{ asset('storage/coding.png') }}" alt="Logo" class="w-10 h-10 object-contain mr-3">
                 <span class="text-2xl font-bold gradient-text">Đàm Nhân Kiệt</span>
             </a>
             
+            {{-- Navigation Links (Center) - Hidden on mobile --}}
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="{{ route('home') }}" class="font-medium {{ request()->routeIs('home') ? 'text-primary' : 'text-gray-300' }} hover:text-primary transition-colors">
+                    Trang chủ
+                </a>
+                <a href="{{ route('projects.index') }}" class="font-medium {{ request()->routeIs('projects.*') ? 'text-primary' : 'text-gray-300' }} hover:text-primary transition-colors">
+                    Dự án
+                </a>
+                <a href="{{ route('blog.index') }}" class="font-medium {{ request()->routeIs('blog.*') ? 'text-primary' : 'text-gray-300' }} hover:text-primary transition-colors">
+                    Blog
+                </a>
+            </div>
+
             <div class="flex items-center gap-4">
                 {{-- Nút Quay lại --}}
                 <a href="{{ url()->previous() }}" class="font-medium text-gray-300 hover:text-primary transition-colors flex items-center">
