@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title') - Admin Panel</title>
-    
-    {{-- 1. DÁN API KEY CỦA BẠN VÀO ĐÂY --}}
-    <script src="https://cdn.tiny.cloud/1/xu86r09wuf41udcyakvrdji942bddatdznr2hp7tscswau2k/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -102,8 +100,6 @@
             });
         }
     </script>
-    
-    {{-- 2. ĐÂY LÀ DÒNG MÃ QUAN TRỌNG ĐỂ KÍCH HOẠT TINYMCE --}}
-    @stack('scripts')
+
 </body>
 </html>
