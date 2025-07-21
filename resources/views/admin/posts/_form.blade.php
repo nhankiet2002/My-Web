@@ -23,19 +23,3 @@
     <a href="{{ route('admin.posts.index') }}" class="btn-secondary px-6 py-2 rounded-lg">Hủy</a>
     <button type="submit" class="btn-primary px-6 py-2 rounded-lg">Lưu Bài viết</button>
 </div>
-
-
-@push('scripts')
-<script>
-    tinymce.init({
-        selector: 'textarea#content-editor-post',
-        plugins: 'advlist autolink lists link image charmap preview anchor pagebreak visualblocks code fullscreen insertdatetime media table powerpaste help wordcount',
-        toolbar: 'undo redo | blocks | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | code | removeformat | help',
-        height: 600,
-        content_style: 'body { font-family:Inter,sans-serif; font-size:16px }',
-        paste_data_images: true,
-        powerpaste_word_import: 'clean',
-        powerpaste_html_import: 'clean',
-    });
-</script>
-@endpush
