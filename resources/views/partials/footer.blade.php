@@ -32,7 +32,7 @@
                     <div>
                         <h4 class="text-lg font-semibold text-white mb-4">Liên kết nhanh</h4>
                         <ul class="space-y-3">
-                            <li><a href="{{ route('home') }}#about" class="text-gray-400 hover:text-primary transition-colors">Về Tôi</a></li>
+                            <li><a href="{{ route('home') }}" class="text-gray-400 hover:text-primary transition-colors">Về Tôi</a></li>
                             <li><a href="{{ route('projects.index') }}" class="text-gray-400 hover:text-primary transition-colors">Dự án</a></li>
                             <li><a href="{{ route('blog.index') }}" class="text-gray-400 hover:text-primary transition-colors">Blog</a></li>
                             <li><a href="{{ route('home') }}#skills" class="text-gray-400 hover:text-primary transition-colors">Kỹ Năng</a></li>
