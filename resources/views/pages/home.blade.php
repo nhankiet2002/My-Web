@@ -1,7 +1,8 @@
 
 @extends('layouts.app')
 
-@section('title', 'Trang chủ - Đàm Nhân Kiệt')
+@section('title', 'Đàm Nhân Kiệt - Kỹ Sư Thủy Lợi, Lập Trình Viên & Nhà Tư Vấn Tử Vi')
+@section('meta_description', 'Khám phá portfolio của Đàm Nhân Kiệt. Nơi kết hợp tư duy kỹ thuật Thủy Lợi, sức mạnh của lập trình và sự thấu hiểu con người qua Tử Vi để tạo ra các giải pháp độc đáo.')
 
 @section('content')
     <!-- Hero Section -->
