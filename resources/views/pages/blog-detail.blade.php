@@ -47,23 +47,33 @@
                 <!-- Author Widget -->
                 <div class="gradient-box p-6 rounded-2xl">
                     <h4 class="text-xl font-bold text-white mb-4">Về Tác Giả</h4>
-                    <div class="flex items-center gap-4">
-                        <img src="/storage/avatar.jpeg" class="w-16 h-16 rounded-full object-cover border-2 border-primary/30">
-                        <div>
-                            <h3 class="font-bold text-white">Đàm Nhân Kiệt</h3>
-                            <p class="text-sm text-primary">Đa lĩnh vực</p>
+                    <a href="{{ route('home') }}" class="group flex items-center gap-4">
+                            <img src="/storage/avatar.jpeg" class="w-16 h-16 rounded-full object-cover border-2 border-primary/30">
+                            <div>
+                                {{-- Thêm group-hover để tên đổi màu khi hover --}}
+                                <h3 class="font-bold text-white group-hover:text-primary transition-colors">Đàm Nhân Kiệt</h3>
+                                <p class="text-sm text-primary">Đa lĩnh vực</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Recent Posts Widget -->
-                <div class="gradient-box p-6 rounded-2xl">
-                    <h4 class="text-xl font-bold text-white mb-4">Bài Viết Gần Đây</h4>
-                    <ul class="space-y-4">
-                        {{-- Dữ liệu này cần được truyền từ controller --}}
-                        <li><a href="#" class="group flex items-start gap-4"><i class="fas fa-file-alt text-primary mt-1"></i><span class="text-gray-300 group-hover:text-primary">So sánh React và Vue</span></a></li>
-                    </ul>
-                </div>
+                        @if(isset($recentPosts) && $recentPosts->isNotEmpty())
+                    <div class="gradient-box p-6 rounded-2xl">
+                        <h4 class="text-xl font-bold text-white mb-4">Bài Viết Gần Đây</h4>
+                        <ul class="space-y-4">
+                            @foreach($recentPosts as $recentPost)
+                            <li>
+                                <a href="{{ route('blog.show', $recentPost->slug) }}" class="group flex items-start gap-4">
+                                    <i class="fas fa-file-alt text-primary mt-1"></i>
+                                    <span class="text-gray-300 group-hover:text-primary transition-colors">
+                                        {{ $recentPost->title }}
+                                    </span>
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
             </div>
         </aside>
     </div>
