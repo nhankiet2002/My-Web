@@ -176,7 +176,7 @@
                             <img src="{{ $project->image_url ?? 'https://via.placeholder.com/800x600/1E1E1E/A4FF63?text=Project' }}" alt="{{ $project->title }}" class="rounded-lg w-full h-48 object-cover">
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-2">{{ $project->title }}</h3>
-                        <p class="text-gray-300 mb-4">{{ Str::limit($project->content, 100) }}</p>
+                        <p class="text-gray-300 mb-4">{{ Str::limit(strip_tags($project->content), 100) }}</p>
                         <div class="flex flex-wrap gap-2">
                             @if($project->technologies)
                                 @foreach(explode(',', $project->technologies) as $tech)

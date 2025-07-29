@@ -19,7 +19,7 @@
                     <span class="gradient-text">{{ $project->title }}</span>
                 </h1>
                 <p class="text-xl text-gray-400">
-                    {{ Str::limit($project->content, 150) }}
+                    {{ Str::limit(strip_tags($project->content), 150) }}
                 </p>
             </header>
 
@@ -28,7 +28,7 @@
 
             <!-- Project Body -->
             <div class="prose-custom max-w-none">
-                {!! \Illuminate\Support\Str::markdown($project->content) !!}
+                {!! $project->content !!}
             </div>
         </article>
 

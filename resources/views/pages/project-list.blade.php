@@ -25,7 +25,7 @@
                     <img src="{{ $project->image_url ?? 'https://via.placeholder.com/800x600' }}" alt="{{ $project->title }}" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">{{ $project->title }}</h3>
-                        <p class="text-gray-400 text-sm mb-4">{{ Str::limit($project->content, 120) }}</p>
+                        <p class="text-gray-400 text-sm mb-4">{{ Str::limit(strip_tags($project->content), 120) }}</p>
                         <div class="flex flex-wrap gap-2">
                              @foreach(explode(',', $project->technologies) as $tech)
                                 <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">{{ trim($tech) }}</span>

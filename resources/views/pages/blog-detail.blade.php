@@ -28,7 +28,7 @@
 
             <!-- Post Body -->
             <div class="prose-custom max-w-none">
-                {!! \Illuminate\Support\Str::markdown($post->content) !!}
+                {!! $post->content !!}
             </div>
 
             <!-- Tags & Share -->

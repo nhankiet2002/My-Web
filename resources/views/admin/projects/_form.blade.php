@@ -37,5 +37,3 @@
     <a href="{{ route('admin.projects.index') }}" class="btn-secondary px-6 py-2 rounded-lg">Hủy</a>
     <button type="submit" class="btn-primary px-6 py-2 rounded-lg">Lưu Dự án</button>
 </div>
-
-@endpush

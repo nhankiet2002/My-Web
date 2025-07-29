@@ -40,6 +40,7 @@ class ProjectController extends Controller
 
         $project = new Project($validated);
         $project->slug = Str::slug($validated['title']);
+        $project->content = $request->input('content');
         $project->image_url = $request->input('image_url');
 
         if ($request->hasFile('image_file')) {
@@ -87,6 +88,7 @@ class ProjectController extends Controller
         
         $project->fill($validated);
         $project->slug = Str::slug($validated['title']);
+        $project->content = $request->input('content');
         $project->image_url = $request->input('image_url');
 
         if ($request->hasFile('image_file')) {
