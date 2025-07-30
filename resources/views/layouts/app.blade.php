@@ -224,14 +224,6 @@
         }
         
         /* Styling for video iframes */
-        .prose-custom iframe {
-            border-radius: 0.5rem;
-            margin: 1.5rem auto;
-            display: block;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            max-width: 100%;
-            height: auto;
-        }
         .prose-custom div[style*="text-align: center"] iframe {
             margin-left: auto;
             margin-right: auto;
